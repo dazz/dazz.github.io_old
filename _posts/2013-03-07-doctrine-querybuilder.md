@@ -1,12 +1,10 @@
 ---
 layout: post
 category : php
-tagline: "Doctrine QueryBuilder"
+tagline: "Building queries"
 tags : [doctrine, querybuilder, architecture, tutorial]
 ---
 {% include JB/setup %}
-
-# Doctrine QueryBuilder
 
 Whenever I started a new project and used the Doctrine ORM in the past, I started to write methods in the Entity repository classes to get all the necessary data for the logic and the views.
 
