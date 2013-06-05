@@ -1,3 +1,10 @@
+---
+layout: post
+category : php
+tagline: "Webtesting the oauth2 lib"
+tags : [testing, oauth2, package, tutorial]
+---
+{% include JB/setup %}
 
 Currently I'm writing on an [Hypermedia API](https://www.google.de/search?q=hypermedia+api) .We used a PHP OAuth2 server implementation that integrates into [Silex](http://silex.sensiolabs.org/), a microframework build with Symfony components.
 
