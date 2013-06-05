@@ -1,7 +1,7 @@
 ---
 layout: page
 title: dazz.github.io
-tagline: the code log
+tagline: "the code log"
 ---
 {% include JB/setup %}
 
