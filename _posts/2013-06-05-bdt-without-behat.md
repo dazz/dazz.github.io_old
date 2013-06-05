@@ -2,7 +2,7 @@
 layout: post
 category : php
 tagline: "BDT without behat"
-tags : [doctrine, querybuilder, architecture, tutorial]
+tags : [testing, bdd, behat, architecture, tutorial]
 ---
 {% include JB/setup %}
 
