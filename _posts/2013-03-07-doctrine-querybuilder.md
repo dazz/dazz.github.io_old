@@ -3,6 +3,7 @@ layout: post
 category : php
 tagline: "Taming queries"
 tags : [doctrine, querybuilder, architecture, tutorial, refactoring, orm]
+comments : false
 ---
 {% include JB/setup %}
 
