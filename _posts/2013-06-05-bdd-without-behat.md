@@ -3,7 +3,7 @@ layout: post
 category : php
 tagline: "When no management is around"
 tags : [testing, bdd, behat, architecture, tutorial]
-published: true
+published: false
 excerpt: "How I came to use Behavoiur Driven Development without using BDD tool behat"
 ---
 {% include JB/setup %}
@@ -64,7 +64,7 @@ class ProjectControllerTest extends Testcase
         $this->when->iVisitProjects($client);
 
         $this->then->theResponseStatusShouldBeOk($client);
-        $this->then->theResponseContentShouldContainProjects($client);
+        $this->then->theResponseShouldContainProjects($client);
     }
 }
 {% endhighlight %}
@@ -131,7 +131,8 @@ class Behaviour
         $this->test = $test;
     }
 
-    // here we put all functions that can be called by given, when and then
+    // here we put all functions that can be called
+    // by given, when and then
 }
 {% endhighlight %}
 
@@ -185,11 +186,16 @@ class Then extends Behaviour
      */
     public function theResponseStatusShouldBeOk($client)
     {
-        $this->test->assertTrue($client->getResponse()->isSuccessful());
-    ]
+        $this->test->assertTrue(
+            $client->getResponse()->isSuccessful()
+        );
+    }
+
+    // ...
 }
 {% endhighlight %}
 
 ## Links
 
 * [Dan North: WHAT’S IN A STORY?](http://dannorth.net/whats-in-a-story/)
+* [Dan North: BDD IS LIKE TDD IF…](http://dannorth.net/2012/05/31/bdd-is-like-tdd-if/)
