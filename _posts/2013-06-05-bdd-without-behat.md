@@ -44,7 +44,32 @@ The classes `Given`, `When` and `Then` all extend a `Behaviour` class so I can h
 
 All three behaviour classes are instantated in the Testcase `setUp` function. They get the DIC and additionally the testcase instance injected as constructor parameter so that PHPUnit assertions can be executed in the `Then` instance.
 
-## The setup
+## The test, what it looks like
+
+{% highlight php startinline linenos=table %}
+class ProjectControllerTest extends Testcase
+{
+    /**
+     * In order to see all projects
+     * As a user
+     * I want to request projects and see some
+     */
+    public function testGetProjects()
+    {
+        $client = $this->createClient();
+
+        $this->given->iHaveSetupAllDatabases();
+        $this->given->iHaveAUser();
+
+        $this->when->iVisitProjects($client);
+
+        $this->then->theResponseStatusShouldBeOk($client);
+        $this->then->theResponseContentShouldContainProjects($client);
+    }
+}
+{% endhighlight %}
+
+### Testcase
 
 {% highlight php startinline linenos=table %}
 class TestCase extends \PHPUnit_Framework_TestCase
@@ -80,6 +105,8 @@ class TestCase extends \PHPUnit_Framework_TestCase
 }
 {% endhighlight %}
 
+### The root class `Behaviour`
+
 {% highlight php startinline linenos=table %}
 use Silex\Application;
 use PHPUnit_Framework_TestCase as TestCase;
@@ -108,7 +135,9 @@ class Behaviour
 }
 {% endhighlight %}
 
-{% highlight PHP startinline linenos=table %}
+### Given When and Then
+
+{% highlight php startinline linenos=table %}
 class Given extends Behaviour
 {
     /**
@@ -129,47 +158,35 @@ class Given extends Behaviour
         // ...
     }
 }
+{% endhighlight %}
 
+{% highlight php startinline linenos=table %}
 class When extends Behaviour
 {
     /**
-     * @param Client $client
+     * Send request to projects resource
+     *
+     * @param \Symfony\Component\HttpKernel\Client $client
      */
     public function iVisitProjects($client)
     {
         // call projects page
     }
 }
-
-class Then extends Behaviour
-{
-}
-
-
 {% endhighlight %}
-## What it looks like
 
 {% highlight php startinline linenos=table %}
-
-class ProjectControllerTest extends Testcase
+class Then extends Behaviour
 {
     /**
-     * In order to see all projects
-     * As a user
-     * I want to request projects and
+     * Assert that the response status code is 2xx
+     *
+     * @param \Symfony\Component\HttpKernel\Client $client
      */
-    public function testGetProjects()
+    public function theResponseStatusShouldBeOk($client)
     {
-        $client = $this->createClient();
-
-        $this->given->iHaveSetupAllDatabases();
-        $this->given->iHaveAUser();
-
-        $this->when->iVisitProjects($client);
-
-        $this->then->theResponseStatusShouldBeOk($client);
-        $this->then->theResponseContentShouldContainProjects($client);
-    }
+        $this->test->assertTrue($client->getResponse()->isSuccessful());
+    ]
 }
 {% endhighlight %}
 
