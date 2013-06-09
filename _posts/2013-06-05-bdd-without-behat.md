@@ -3,7 +3,7 @@ layout: post
 category : php
 tagline: "When no management is around"
 tags : [testing, bdd, behat, architecture, tutorial]
-published: false
+published: true
 excerpt: "How I came to use Behavoiur Driven Development without using BDD tool behat"
 ---
 {% include JB/setup %}
