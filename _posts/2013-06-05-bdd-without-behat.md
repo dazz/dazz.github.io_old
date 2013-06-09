@@ -1,7 +1,7 @@
 ---
 layout: post
 category : php
-tagline: "When no management is around"
+tagline: "When no business is around"
 tags : [testing, bdd, behat, architecture, tutorial]
 published: false
 excerpt: "How I came to use Behavoiur Driven Development without using BDD tool behat"
@@ -10,11 +10,11 @@ excerpt: "How I came to use Behavoiur Driven Development without using BDD tool 
 
 Given I worked for the last few month on a nice project. Awesome.
 
-When I was writing unit and acceptance tests I extracted methods that setup the pre-conditions I needed for the tests to run successful. I called them `setupAllDatabases` for example (which is no problem as they run with sqlight in memory) to reuse them in other tests.
+When I was writing unit and acceptance tests I extracted methods that setup the pre-conditions I needed for the tests to run successful. I called them `setupAllDatabases` for example (which is no problem as they run with sqlight in memory) and `requestProjects()` to reuse them in other tests.
 
 And when I heard a talk at the [Berlin PHP usergroup](http://www.bephpug.de) from [Nikolas Martens](http://blog.rtens.org/) about "[BDD to the point (pdf)](http://www.bephpug.de/folien/2013-05-07_BDD_to_the_point-Nikoas_Martens.pdf)" and he showed a very simple way to implement a test environment that lets me write testcases the BDD way.
 
-Then I was intrigued. This sounds like a nice way to order what and how things happen in the testcases.
+Then I was intrigued. This sounds like a clean way to structure the testcases.
 
 ## The pre-face
 
@@ -136,7 +136,7 @@ class Behaviour
 }
 {% endhighlight %}
 
-### Given When and Then
+### Given
 
 {% highlight php startinline linenos=table %}
 class Given extends Behaviour
@@ -161,6 +161,8 @@ class Given extends Behaviour
 }
 {% endhighlight %}
 
+### When
+
 {% highlight php startinline linenos=table %}
 class When extends Behaviour
 {
@@ -175,6 +177,8 @@ class When extends Behaviour
     }
 }
 {% endhighlight %}
+
+### Then
 
 {% highlight php startinline linenos=table %}
 class Then extends Behaviour
