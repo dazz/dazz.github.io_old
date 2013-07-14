@@ -79,5 +79,8 @@ script:
   - ./vendor/bin/phpunit
 {% endhighlight %}
 
+## Links
+
+* [Travis - Installing PEAR packages](http://about.travis-ci.org/docs/user/languages/php/#Installing-PEAR-packages)
 
 
