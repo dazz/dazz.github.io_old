@@ -4,7 +4,7 @@ category : php
 tagline: "Run the tools. Always."
 tags : [phpstorm, phpmd, phpcs]
 published: true
-excerpt: ""
+excerpt: "Run the tools. Always."
 
 ---
 {% include JB/setup %}
