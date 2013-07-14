@@ -119,3 +119,7 @@ body {
     background: #336699;
     box-shadow: inset -5px 0px 10px -5px #000;
 }
+
+.linenos {
+  width: 12px;
+}
