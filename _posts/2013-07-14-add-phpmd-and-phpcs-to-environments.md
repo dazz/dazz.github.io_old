@@ -66,6 +66,7 @@ language: php
 
 before_script:
   - pear install PHP_CodeSniffer
+  - phpenv rehash
   - ./composer.phar install --dev --prefer-source --no-interaction
 
 php:
