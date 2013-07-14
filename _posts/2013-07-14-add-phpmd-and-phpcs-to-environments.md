@@ -79,6 +79,10 @@ script:
   - ./vendor/bin/phpunit
 {% endhighlight %}
 
+## In Jenkins
+
+Just see the [Template for Jenkins Jobs for PHP Projects](http://jenkins-php.org/)
+
 ## Links
 
 * [Travis - Installing PEAR packages](http://about.travis-ci.org/docs/user/languages/php/#Installing-PEAR-packages)
