@@ -22,7 +22,7 @@ There are different times when to let the checks run.
 * With every pull request
 * With test runs (on travis)
 
-You have your custom rules in the company or even project? Use the [PHP Coding Standard Generator](http://edorian.github.io/php-coding-standard-generator/#phpmd) (thanks edorian).
+Let them be part of your continuous deployment. You have your custom rules in the company or even project? Use the [PHP Coding Standard Generator](http://edorian.github.io/php-coding-standard-generator/#phpmd) (thanks edorian).
 
 ## In PhpStorm
 
