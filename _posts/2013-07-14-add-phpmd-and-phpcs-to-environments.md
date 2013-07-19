@@ -13,7 +13,7 @@ So clean code matters. To the company, the team, the project and me. A set of ru
 
 ## The tools
 
-There are two tools which define and check the adherence of rules. **PHP Mess Detector** and **PHP Code Sniffer**. They bring a good set of rules from where it is easy to start to customize.
+There are two tools which define and check the adherence of rules. **[PHP Mess Detector](http://phpmd.org/)** and **[PHP Code Sniffer](http://pear.php.net/manual/en/package.php.php-codesniffer.advanced-usage.php)**. They bring a good set of rules from where it is easy to start to customize.
 
 There are different times when to let the checks run.
 
@@ -23,6 +23,29 @@ There are different times when to let the checks run.
 * With test runs (on travis)
 
 Let them be part of your continuous deployment. You have your custom rules in the company or even project? Use the [PHP Coding Standard Generator](http://edorian.github.io/php-coding-standard-generator/#phpmd) (thanks edorian).
+
+But before you start creating your own ruleset consider the following: Removing the standard rules means they are violated somewhere in the codebase and it can not always be insured it happened only at places that where known.
+
+So a better handling would be to add annotations with Mess Detector and comments with Code Sniffer. The advantage is that violations are documented and eventually fixed.
+
+{% highlight php startinline linenos=table %}
+/**
+ * This will suppress UnusedLocalVariable warnings in this method
+ *
+ * @SuppressWarnings(PHPMD.UnusedLocalVariable)
+ */
+public function foo() {
+    $baz = 42;
+}
+{% endhighlight %}
+
+In Codesniffer:
+
+{% highlight php startinline linenos=table %}
+// @codingStandardsIgnoreStart
+$xmlPackage['error_code'] = get_default_error_code_value();
+// @codingStandardsIgnoreEnd
+{% endhighlight %}
 
 ## In PhpStorm
 
@@ -75,7 +98,7 @@ php:
 
 script:
   - phpcs --standard=psr2 ./src
-  - ./vendor/bin/phpmd src/ text phpmd.xml
+  - ./vendor/bin/phpmd src/ text codesize,unusedcode,naming,phpmd.xml
   - ./vendor/bin/phpunit
 {% endhighlight %}
 
