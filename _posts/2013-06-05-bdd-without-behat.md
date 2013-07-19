@@ -29,7 +29,7 @@ and
 
     Given [I have x] When [I visit page y] Then [I expect a result z]
 
-that is fairly easy to understands.
+that is fairly easy to understand.
 
 **But** as there are no business users involved in the development of the project I am working on it would just bring _"one more tool"_ to the environment that I would have to care about. Which means no outside reason to get Behat in the project.
 
@@ -68,6 +68,7 @@ class ProjectControllerTest extends Testcase
         $this->then->theResponseShouldContainProjects($client);
     }
 }
+
 {% endhighlight %}
 
 ### Testcase
@@ -104,6 +105,7 @@ class TestCase extends \PHPUnit_Framework_TestCase
 
     // ...
 }
+
 {% endhighlight %}
 
 ### The root class `Behaviour`
@@ -114,10 +116,8 @@ use PHPUnit_Framework_TestCase as TestCase;
 
 class Behaviour
 {
-
     /** @var Application $app */
     protected $app;
-
 
     /** @var \PHPUnit_Framework_TestCase */
     protected $phpunit;
@@ -135,6 +135,7 @@ class Behaviour
     // here we put all functions that can be called
     // by given, when and then
 }
+
 {% endhighlight %}
 
 ### Given
@@ -160,6 +161,7 @@ class Given extends Behaviour
         // ...
     }
 }
+
 {% endhighlight %}
 
 ### When
@@ -177,6 +179,7 @@ class When extends Behaviour
         // call projects page
     }
 }
+
 {% endhighlight %}
 
 ### Then
@@ -198,6 +201,7 @@ class Then extends Behaviour
 
     // ...
 }
+
 {% endhighlight %}
 
 ## Links
