@@ -28,6 +28,8 @@ But before you start creating your own ruleset consider the following: Removing 
 
 So a better handling would be to add annotations with Mess Detector and comments with Code Sniffer. The advantage is that violations are documented and eventually fixed.
 
+Suppress Mess Detector warnings:
+
 {% highlight php startinline linenos=table %}
 /**
  * This will suppress UnusedLocalVariable warnings in this method
@@ -39,7 +41,7 @@ public function foo() {
 }
 {% endhighlight %}
 
-In Codesniffer:
+Suppress Codesniffer warnings:
 
 {% highlight php startinline linenos=table %}
 // @codingStandardsIgnoreStart
