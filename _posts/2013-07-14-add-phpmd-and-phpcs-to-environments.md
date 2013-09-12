@@ -55,7 +55,7 @@ To integrate the two tools in PhpStorm:
 
 ### Set the code style
 
-* **Settings > Code Style > PHP > Set from ...**
+* **Settings > Code Style > PHP > Set from ... > Predefined Style**
 
 
 ### Add the pathes
