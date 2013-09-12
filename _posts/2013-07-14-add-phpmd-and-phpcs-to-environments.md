@@ -53,6 +53,11 @@ $xmlPackage['error_code'] = get_default_error_code_value();
 
 To integrate the two tools in PhpStorm:
 
+### Set the code style
+
+* **Settings > Code Style > PHP > Set from ...**
+
+
 ### Add the pathes
 
 * **Settings > PHP > Mess Detector** add the path to phpmd i.e. `/usr/bin/phpmd`
