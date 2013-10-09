@@ -1,0 +1,117 @@
+---
+layout: post
+category : php
+tagline: "One of the two hard things ..."
+tags : []
+published: false
+excerpt: ""
+
+---
+{% include JB/setup %}
+
+* Adapter
+* Protocol
+* Target
+* Entity
+* Factory
+* Bucket
+* Option
+* Attribute
+* Type
+* Key
+* Peer
+* Identity
+* Method
+* Unit
+* Chain
+* Collection
+* Info
+* Exception
+* Service
+* Strategy
+* State
+* Element
+* Node
+* Context
+* Item
+* Base
+* Configuration
+* Flag
+* Style
+* Record
+* Field
+
+
+* Adjuster
+* Attacher
+* Binder
+* Builder
+* Calculator
+* Coordinator
+* Container
+* Converter
+* Controller
+* Connector
+* Collector
+* Configurer
+* Constructor
+* Composer
+* Commander
+* Debugger
+* Decorator
+* Decider
+* Designer
+* Delegator
+* Destroyer
+* Dispatcher
+* Editor
+* Executor
+* Exporter
+* Filter
+* Formatter
+* Generator
+* Helper
+* Handler
+* Initializer
+* Identifier
+* Interpreter
+* Inserter
+* Informer
+* Importer
+* Iterator
+* Listener
+* Limiter
+* Manager
+* Marker
+* Mediator
+* Maker
+* Matcher
+* Mapper
+* Messanger
+* Mover
+* Observer
+* Parser
+* Presenter
+* Provider
+* Preparer
+* Printer
+* Processor
+* Receiver
+* Reader
+* Recorder
+* Remover
+* Resolver
+* Selector
+* Scheduler
+* Sender
+* Serializer
+* Sorter
+* Supporter
+* Synchronizer
+* Tokenizer
+* Tracer
+* Tracker
+* Validator
+* Viewer
+* Visitor
+* Writer
