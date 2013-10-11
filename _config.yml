@@ -13,11 +13,11 @@ pygments: true
 title : dazz.github.io
 tagline: Site Tagline
 author :
-  name : Hakin Dazs
+  name : Anne-Julia Scheuermann
   email : hakindazs@gmail.com
   github : dazz
   twitter : dazzlog
-  feedburner : feedname
+  #feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
