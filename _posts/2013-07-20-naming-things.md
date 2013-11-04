@@ -9,6 +9,8 @@ excerpt: ""
 ---
 {% include JB/setup %}
 
+### What it is
+
 * Adapter
 * Protocol
 * Target
@@ -41,6 +43,7 @@ excerpt: ""
 * Record
 * Field
 
+### What it does
 
 * Adjuster
 * Attacher
@@ -106,6 +109,7 @@ excerpt: ""
 * Sender
 * Serializer
 * Sorter
+* Standardizer
 * Supporter
 * Synchronizer
 * Tokenizer
