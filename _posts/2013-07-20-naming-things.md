@@ -11,45 +11,66 @@ excerpt: ""
 
 ### What it is
 
+#### Creational Patterns - These deal with object creation.
+
+* Abstract Factory
+* Builder
+* Factory Method
+* Object Pool
+* Prototype
+
+#### Structural Patterns - These deal with object architecture.
+
 * Adapter
-* Protocol
-* Target
-* Entity
-* Factory
-* Bucket
-* Option
 * Attribute
-* Type
-* Key
-* Peer
-* Identity
-* Method
-* Unit
+* Base
+* Bridge
+* Bucket
 * Chain
 * Collection
-* Info
+* Configuration
+* Context
+* Command
+* Composite
+* Decorator
+* Element
+* Entity
 * Exception
+* Factory
+* Field
+* Flag
+* Flyweight
+* Identity
+* Info
+* Item
+* Key
+* Method
+* Node
+* Null Object
+* Option
+* Proxy
+* Protocol
+* Peer
+* Record
 * Service
 * Strategy
-* State
-* Element
-* Node
-* Context
-* Item
-* Base
-* Configuration
-* Flag
 * Style
-* Record
-* Field
+* State
+* Target
+* Template Method
+* Type
+* Unit
 
 ### What it does
+
+#### Behavioral Patterns - These deal with object "communication" or behavior.
 
 * Adjuster
 * Attacher
 * Binder
 * Builder
 * Calculator
+* Chain Of Responsibility
 * Coordinator
 * Container
 * Converter
@@ -87,6 +108,7 @@ excerpt: ""
 * Manager
 * Marker
 * Mediator
+* Memento
 * Maker
 * Matcher
 * Mapper
