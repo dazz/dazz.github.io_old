@@ -9,17 +9,16 @@ excerpt: ""
 ---
 {% include JB/setup %}
 
-### What it is
 
-#### Creational Patterns - These deal with object creation.
+### Creational Patterns - These deal with object creation.
 
-* Abstract Factory
-* Builder
-* Factory Method
-* Object Pool
+* Abstract Factory - way to encapsulate a group of individual factories that have a common theme without specifying their concrete classes
+* Factory Method - creating objects (products) without specifying the exact class of object that will be created. The essence of this pattern is to "Define an interface for creating an object, but let the classes that implement the interface decide which class to instantiate
+* Builder - uses another object, a builder, that receives each initialization parameter step by step and then returns the resulting constructed object at once
+* Object Pool - uses a set of initialized objects kept ready to use, rather than allocating and destroying them on demand
 * Prototype
 
-#### Structural Patterns - These deal with object architecture.
+### Structural Patterns - These deal with object architecture.
 
 * Adapter
 * Attribute
