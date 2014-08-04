@@ -87,6 +87,7 @@ excerpt: ""
 * Delegator
 * Destroyer
 * Dispatcher
+* Dumper
 * Editor
 * Executor
 * Exporter
