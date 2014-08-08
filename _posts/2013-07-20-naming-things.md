@@ -18,9 +18,20 @@ excerpt: ""
 * Object Pool - uses a set of initialized objects kept ready to use, rather than allocating and destroying them on demand
 * Prototype
 
+#### Verbs
+
+* Add
+* Create
+* Configure
+* Display
+* Edit
+* Join
+* Merge
+* Refresh
+* 
+
 ### Structural Patterns - These deal with object architecture.
 
-* Adapter
 * Attribute
 * Base
 * Bridge
@@ -64,6 +75,7 @@ excerpt: ""
 
 #### Behavioral Patterns - These deal with object "communication" or behavior.
 
+* Adapter
 * Adjuster
 * Attacher
 * Binder
@@ -80,6 +92,7 @@ excerpt: ""
 * Constructor
 * Composer
 * Commander
+* Creater
 * Debugger
 * Decorator
 * Decider
@@ -95,7 +108,7 @@ excerpt: ""
 * Formatter
 * Generator
 * Helper
-* Handler
+* Handler (bad)
 * Initializer
 * Identifier
 * Interpreter
@@ -109,7 +122,7 @@ excerpt: ""
 * Marker
 * Mediator
 * Memento
-* Maker
+* Maker (bad)
 * Matcher
 * Mapper
 * Messanger
