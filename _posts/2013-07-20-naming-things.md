@@ -21,14 +21,30 @@ excerpt: ""
 ### Verbs
 
 * Add
+* Build
+* Clean
 * Create
 * Configure
 * Display
 * Edit
+* Ensure
+* Fix
+* Implement
+* Integrate
 * Join
+* Make
 * Merge
+* Move
+* Pin down
+* Prevent
+* Refactor
 * Refresh
-* 
+* Remove
+* Revert
+* Run
+* Style
+* Update
+* Use
 
 ### Structural Patterns - These deal with object architecture.
 
@@ -46,7 +62,6 @@ excerpt: ""
 * Element
 * Entity
 * Exception
-* Factory
 * Field
 * Flag
 * Flyweight
@@ -104,6 +119,8 @@ excerpt: ""
 * Editor
 * Executor
 * Exporter
+* Extractor
+* Factory
 * Filter
 * Formatter
 * Generator
@@ -118,6 +135,7 @@ excerpt: ""
 * Iterator
 * Listener
 * Limiter
+* Machine
 * Manager
 * Marker
 * Mediator
