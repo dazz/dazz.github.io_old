@@ -18,7 +18,7 @@ excerpt: ""
 * Object Pool - uses a set of initialized objects kept ready to use, rather than allocating and destroying them on demand
 * Prototype
 
-#### Verbs
+### Verbs
 
 * Add
 * Create
