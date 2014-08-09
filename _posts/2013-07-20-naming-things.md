@@ -58,7 +58,6 @@ excerpt: ""
 * Context
 * Command
 * Composite
-* Decorator
 * Element
 * Entity
 * Exception
