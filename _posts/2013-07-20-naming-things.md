@@ -156,6 +156,7 @@ excerpt: ""
 * Recorder
 * Remover
 * Resolver
+* Sanitizer
 * Selector
 * Scheduler
 * Sender
