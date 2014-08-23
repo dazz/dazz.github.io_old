@@ -66,7 +66,7 @@ List of stuff that gets penalty points.
 
 In `src/Service/StatsServiceProvider.php`
 
-```php
+{% highlight php startinline linenos=table %}
 $app['stats.measureWeight.config'] = $app->factory(
     function () {
         return [
@@ -80,7 +80,7 @@ $app['stats.measureWeight.config'] = $app->factory(
         ];
     }
 );
-```
+{% endhighlight %}
 
 The only weight that is more dynamic is the age of PRs. The points are given for every day the PR is open until day 10 (`$days * $weight`).
 After that the value is calculated with `$days * $days * $weight` to indicate that it is open for far too long and immediate action is required.
