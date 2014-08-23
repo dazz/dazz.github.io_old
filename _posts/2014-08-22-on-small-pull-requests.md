@@ -11,7 +11,7 @@ excerpt: "Small pull requests are faster integrated."
 
 I created this tool mainly to get an overview over time of the state of repositories.
 It is hosted here [https://github.com/dazz/repo-pr-stats](https://github.com/dazz/repo-pr-stats)
-Until now I like it very much and 
+Until now I like it very much, so here it is :)
 
 ## Why is this tool here?
 
