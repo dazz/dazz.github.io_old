@@ -5,7 +5,8 @@ tagline: "Pull requests should be small"
 tags : [vcs, integration, tool]
 comments : true
 excerpt: "Small pull requests are faster integrated."
----.
+---
+
 {% include JB/setup %}
 
 I created this tool mainly to get an overview over time of the state of repositories.
